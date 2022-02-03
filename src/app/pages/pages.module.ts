@@ -4,12 +4,17 @@ import { CommonModule } from '@angular/common';
 // MÓDULOS
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from "@angular/forms";
+import { ComponentsModule } from '../components/components.module';
 
 // COMPONENTES
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+
 
 
 
@@ -20,7 +25,9 @@ import { PagesComponent } from './pages.component';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,
@@ -31,7 +38,9 @@ import { PagesComponent } from './pages.component';
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ComponentsModule
   ],
   
 })
